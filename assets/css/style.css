@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --maincolor:#008AAA;
+    --color:#D1884F;
+    --lightcolr:#3BBADB;
+}
+h1{
+    font-size: 32px;
+    color: var(--maincolor);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+#different-color{
+    color: var(--color);
+}
+#container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+nav{
+    margin-top: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.active{
+    color: var(--color) ;
+}
+.navbar li{
+    display: inline-block;
+    padding: 20px 20px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.navbar li:last-of-type{
+    padding: 20px 0;
+}
+.navbar li:hover{
+    color: var(--color);
+}
+.navbar li i{
+    margin-right: 5px;
+}
+
+.about-section{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.info-aboutme{
+    width: 50%;
+}
+.info-aboutme span{
+    color: var(--lightcolr);
+}
+
+.personal-image{
+    width: 40%;
+}
+.personal-image img{
+    width: 100%;
+    border-bottom-left-radius: 180px;
+    box-shadow: -10px 10px var(--lightcolr);
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: transparent;
+    padding: 5px 15px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: #fff;
+    background-color: var(--maincolor);
+    cursor: pointer;
+}
+button.special{
+    margin-left: 10px;
+    border-color: #3BBADB;
+    background-color: #fff;
+    color: var(--lightcolr);
+}
+button.special:hover{
+    color: #fff;
+    background-color: var(--maincolor);
+}
+@media screen and (max-width:580px) {
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar li{
+        display: block;
+    }
+    .navbar li:last-of-type{
+        padding: 20px 20px;
+    }
+    .about-section{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .info-aboutme{
+        width: 100%;
+    }
+    .personal-image{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:992px) {
+    .about-section{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .info-aboutme{
+        width: 100%;
+    }
+    .personal-image{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
